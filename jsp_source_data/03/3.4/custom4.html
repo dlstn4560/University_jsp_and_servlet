@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<ul id="web">
+<li class="students" data-type="name" data-id="1">이태연</li>
+<li class="students" data-type="name" data-id="2">홍수영</li>
+<li class="students" data-type="name" data-id="3">박유리</li>
+</ul>
+<script>
+// data-type이 “name”인 속성값을 가진 엘리먼트들의 데이터를 배열로 저장
+var stud = document.querySelectorAll('[data-type="name"]');
+// 배열의 첫 번째 값을 “***”로 변경
+stud[0].innerHTML = "***";
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>JSP World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- jQuery, jQuery Mobile 라이브러리 사용: CDN 방식 --> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+</head>
+<body>
+
+<section data-role="page">
+
+	<!-- 1. 헤더 -->
+	<header data-role="header" data-theme="b">
+		<!-- 헤더 타이틀 -->
+		<h1>오디오 듣기</h1>
+	</header> 
+
+	<!-- 2. 본문 -->
+	<section data-role="content"> 
+	    
+        <!-- 목록: 시작 -->  		
+		<ul data-role="listview" data-inset="true" data-theme="e"> 
+			
+			<!-- 목록 아이템 1 -->
+			<li>
+			    <!-- 오디오: 제목, 아티스트, 재생시간 -->
+				<h3>학교종</h3>
+				<p><strong>김메리</strong></p>
+				<p class="ui-li-aside"><strong>00:19</strong>분</p>				
+			</li>				
+			
+		</ul>		
+        <!-- 목록: 끝 -->  		
+
+        <center>		
+		<!-- 오디오 제어기 -->
+		<audio src="../../contents/audio/schoolBell.mp3" controls="controls" autoplay="autoplay">
+		</audio>
+		</center>
+		
+	</section> 
+
+	<!-- 3. 푸터 -->
+	<footer data-role="footer" data-theme="a" data-position="fixed">
+	    <!-- 푸터 내용: 회사정보 -->
+        <h3>(주)JSP World 서울 강남구 삼성동 1234</h3>
+	</footer>
+
+</section> 
+
+</body>
+</html>
