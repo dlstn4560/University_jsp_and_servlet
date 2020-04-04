@@ -1,57 +1,54 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>JSP World</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>JSP World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- jQuery, jQuery Mobile ¶óÀÌºê·¯¸® »ç¿ë: CDN ¹æ½Ä --> 
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <!-- jQuery, jQuery Mobile ï¿½ï¿½ï¿½Ìºê·¯ï¿½ï¿½ ï¿½ï¿½ï¿½: CDN ï¿½ï¿½ï¿½ -->
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+  </head>
+  <body>
+    <section data-role="page">
+      <!-- 1. ï¿½ï¿½ï¿½ -->
+      <header data-role="header" data-theme="b">
+        <!-- ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½Æ² -->
+        <h1>ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½</h1>
+      </header>
 
-</head>
-<body>
+      <!-- 2. ï¿½ï¿½ï¿½ï¿½ -->
+      <section data-role="content">
+        <!-- ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ -->
+        <ul data-role="listview" data-inset="true" data-theme="e">
+          <!-- ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 -->
+          <li>
+            <!-- ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Æ¼ï¿½ï¿½Æ®, ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ -->
+            <h3>ï¿½Ð±ï¿½ï¿½ï¿½</h3>
+            <p><strong>ï¿½ï¿½Þ¸ï¿½</strong></p>
+            <p class="ui-li-aside"><strong>00:19</strong>ï¿½ï¿½</p>
+          </li>
+        </ul>
+        <!-- ï¿½ï¿½ï¿½: ï¿½ï¿½ -->
 
-<section data-role="page">
+        <center>
+          <!-- ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ -->
+          <audio
+            src="../../contents/audio/schoolBell.mp3"
+            controls="controls"
+            autoplay="autoplay"
+          ></audio>
+        </center>
+      </section>
 
-	<!-- 1. Çì´õ -->
-	<header data-role="header" data-theme="b">
-		<!-- Çì´õ Å¸ÀÌÆ² -->
-		<h1>¿Àµð¿À µè±â</h1>
-	</header> 
-
-	<!-- 2. º»¹® -->
-	<section data-role="content"> 
-	    
-        <!-- ¸ñ·Ï: ½ÃÀÛ -->  		
-		<ul data-role="listview" data-inset="true" data-theme="e"> 
-			
-			<!-- ¸ñ·Ï ¾ÆÀÌÅÛ 1 -->
-			<li>
-			    <!-- ¿Àµð¿À: Á¦¸ñ, ¾ÆÆ¼½ºÆ®, Àç»ý½Ã°£ -->
-				<h3>ÇÐ±³Á¾</h3>
-				<p><strong>±è¸Þ¸®</strong></p>
-				<p class="ui-li-aside"><strong>00:19</strong>ºÐ</p>				
-			</li>				
-			
-		</ul>		
-        <!-- ¸ñ·Ï: ³¡ -->  		
-
-        <center>		
-		<!-- ¿Àµð¿À Á¦¾î±â -->
-		<audio src="../../contents/audio/schoolBell.mp3" controls="controls" autoplay="autoplay">
-		</audio>
-		</center>
-		
-	</section> 
-
-	<!-- 3. ÇªÅÍ -->
-	<footer data-role="footer" data-theme="a" data-position="fixed">
-	    <!-- ÇªÅÍ ³»¿ë: È¸»çÁ¤º¸ -->
-        <h3>(ÁÖ)JSP World ¼­¿ï °­³²±¸ »ï¼ºµ¿ 1234</h3>
-	</footer>
-
-</section> 
-
-</body>
+      <!-- 3. Çªï¿½ï¿½ -->
+      <footer data-role="footer" data-theme="a" data-position="fixed">
+        <!-- Çªï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -->
+        <h3>(ï¿½ï¿½)JSP World ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¼ºï¿½ï¿½ 1234</h3>
+      </footer>
+    </section>
+  </body>
 </html>
